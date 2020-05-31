@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="static/js/jquery.js"></script>
+
+	<link rel="stylesheet" href="static/css/style.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+	<div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+
+
+	<!-- 
+	<div id="login-card" class="card">
+	<div class="card-body">
+		<h1>wallpaper App Admin</h1>
+		<form id="login-form">
+			<div class="form-group">
+				<label for="email">email</label>
+				<input type="email" id="email" class="form-control"/> 
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" class="form-control"/> 
+			</div>
+
+			<div id="user_div" class="form-group">
+
+		<button id="btn-login" type="button" class="btn btn-primary">Login</button> 
+
+		<input type="button" onclick="hello();" class="btn btn-primary" value="login"> 
+
+				 <button onclick="login()" class="btn btn-primary">login to account</button>
+				 </div>
+		</form>
+	</div>
+    </div> -->
+
+    <!-- logout -->
+
+    <div id="user_div" class="loggedin-div">
+    <h3>Welcome to Admin</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAt7D6_g13A7LuqvFipZ-w0fU7fHHwnyBA",
+    authDomain: "mywallpaperapp-8a377.firebaseapp.com",
+    databaseURL: "https://mywallpaperapp-8a377.firebaseio.com",
+    projectId: "mywallpaperapp-8a377",
+    storageBucket: "mywallpaperapp-8a377.appspot.com",
+    messagingSenderId: "839148168776",
+    appId: "1:839148168776:web:632c1cd4eea398af349a7d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="static/js/chal.js"></script>
+
+
+</body>
+</html>
